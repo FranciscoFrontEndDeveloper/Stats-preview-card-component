@@ -26,6 +26,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
+  overflow: scroll;
 }
 
 .containerMain__card {
@@ -45,13 +46,16 @@ body {
 .card__info {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
 }
 .card__info div {
   border: 1px solid red;
 }
-.card__info h1, .card__info p {
+.card__info h1, .card__info h3, .card__info p {
   margin: 0;
+}
+.card__info span {
+  display: block;
 }
 .card__info div:nth-child(1) {
   grid-column: 1/2;

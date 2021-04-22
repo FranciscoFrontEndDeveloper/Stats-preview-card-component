@@ -19,6 +19,7 @@ body
  display: grid
  justify-items: center
  align-items: center
+ overflow: scroll
 .containerMain__card
  min-width: 80%
  max-width: 70%
@@ -33,11 +34,13 @@ body
 .card__info
   display: grid
   grid-template-columns: 1fr
-  grid-template-rows: repeat(5,1fr )
+  grid-template-rows: repeat(5,auto )
   div
     border: 1px solid red
-  h1, p
+  h1,h3,p
     margin: 0
+  span
+    display: block
   div:nth-child(1)
     grid-column: 1/2
     grid-row: 1/2  

@@ -121,7 +121,21 @@ body {
 
 .containerFooter {
   display: grid;
-  align-items: end;
+  justify-items: center;
+  background: #000;
+  width: 100%;
+}
+.containerFooter p {
+  color: #fff;
+  text-align: center;
+}
+.containerFooter p a {
+  color: #FF3F00;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.containerFooter p a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

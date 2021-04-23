@@ -41,6 +41,7 @@ body {
   grid-template-rows: auto 1fr;
   background: #1b1938;
   overflow: scroll;
+  border-radius: 8px;
 }
 
 .card__image img {
@@ -142,7 +143,6 @@ body {
   }
   .card__image img {
     width: 300px;
-    height: 100%;
   }
 
   .card__info {
